@@ -1,25 +1,19 @@
-//
-//  ViewController.swift
-//  CustomNavigationBarTest
-//
-//  Created by Takehiro Kaneko on 2018/04/03.
-//  Copyright © 2018年 Takehiro Kaneko. All rights reserved.
-//
-
 import UIKit
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+
+        if #available(iOS 11.0, *) {
+            additionalSafeAreaInsets.top = 100 - 44
+        } else {
+            navigationController?.navigationBar.setTitleVerticalPositionAdjustment(-20.0, for: .default)
+        }
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationController?.navigationBar.sizeToFit()
     }
-
-
 }
-

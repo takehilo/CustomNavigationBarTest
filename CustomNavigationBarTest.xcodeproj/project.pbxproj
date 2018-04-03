@@ -12,6 +12,8 @@
 		6DD10269207350B2003E6A75 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6DD10267207350B2003E6A75 /* Main.storyboard */; };
 		6DD1026B207350B2003E6A75 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6DD1026A207350B2003E6A75 /* Assets.xcassets */; };
 		6DD1026E207350B2003E6A75 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6DD1026C207350B2003E6A75 /* LaunchScreen.storyboard */; };
+		6DD10276207352FC003E6A75 /* CustomNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DD10275207352FC003E6A75 /* CustomNavigationBar.swift */; };
+		6DD1027820736090003E6A75 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DD1027720736090003E6A75 /* SecondViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		6DD1026A207350B2003E6A75 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6DD1026D207350B2003E6A75 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6DD1026F207350B2003E6A75 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6DD10275207352FC003E6A75 /* CustomNavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavigationBar.swift; sourceTree = "<group>"; };
+		6DD1027720736090003E6A75 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +60,8 @@
 			children = (
 				6DD10263207350B2003E6A75 /* AppDelegate.swift */,
 				6DD10265207350B2003E6A75 /* ViewController.swift */,
+				6DD1027720736090003E6A75 /* SecondViewController.swift */,
+				6DD10275207352FC003E6A75 /* CustomNavigationBar.swift */,
 				6DD10267207350B2003E6A75 /* Main.storyboard */,
 				6DD1026A207350B2003E6A75 /* Assets.xcassets */,
 				6DD1026C207350B2003E6A75 /* LaunchScreen.storyboard */,
@@ -136,6 +142,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6DD1027820736090003E6A75 /* SecondViewController.swift in Sources */,
+				6DD10276207352FC003E6A75 /* CustomNavigationBar.swift in Sources */,
 				6DD10266207350B2003E6A75 /* ViewController.swift in Sources */,
 				6DD10264207350B2003E6A75 /* AppDelegate.swift in Sources */,
 			);
@@ -211,7 +219,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -262,7 +270,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -276,6 +284,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = CustomNavigationBarTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.CustomNavigationBarTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -290,6 +299,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = CustomNavigationBarTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.CustomNavigationBarTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
